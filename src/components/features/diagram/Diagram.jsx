@@ -32,7 +32,7 @@ export const options = {
     },
     title: {
       display: true,
-      text: "Upcoming Orders",
+      text: "Orders from past 7 Days",
     },
   },
 };
@@ -52,6 +52,6 @@ export const data = {
 };
 
 function Diagram() {
-  return <Line width={700} options={options} data={data} />;
+  return <Line  width={600} options={options} data={data} />;
 }
 export default Diagram;
