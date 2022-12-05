@@ -9,7 +9,7 @@ function TableProvider({ children }){
   }, []);
   return(
     <>
-    <orderTableContext.Provider value={{table}}>
+    <orderTableContext.Provider value={{table,setTable}}>
       {children}
     </orderTableContext.Provider>
     

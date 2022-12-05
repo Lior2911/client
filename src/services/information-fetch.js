@@ -1,9 +1,9 @@
-export const getInformation = async ()=>{
-  try{
- return await fetch('http://localhost:6060/information/').then(res=>res.json()).then(res=>console.log(res))
-  }
-  catch(error){
+export const getInformation = async () => {
+  try {
+    return await fetch("http://localhost:5000/information/")
+      .then((res) => res.json())
+      
+  } catch (error) {
     console.log(error);
-
   }
-}
+};

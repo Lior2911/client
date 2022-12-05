@@ -1,17 +1,37 @@
-.grid{
-  display: grid;
-  grid-template-columns: 25% 25% 25% 10% 10%;
-  justify-content: center;
-  align-items: center;
-  width: 95vw;
-  gap: 1.5rem;
-  color: black;
-  font-size:1.2rem;
-
-}
-#collectionRow{
-
+.circleContainer{
   
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+
+
 }
-#mainContainer{
+.circle{
+height: 24vh;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+
 }
+
+.circleO{
+  height: 200px;
+  width: 200px;
+  border: 5px solid rgb(53, 162, 235);
+  border-left: 4px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+.tabledata{
+  background-color: white;
+}
+.headerDiv{
+  background-color: rgb(53, 162, 235) ;
+}
+

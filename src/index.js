@@ -8,12 +8,16 @@ import DepartmentProvider from "./context/departmentContext";
 import CategoryProvider from "./context/categoryContext";
 import InformationProvider from "./context/informationContext";
 import TableProvider from "./context/orderTableContext";
+import { LastOrderProvider } from "./context/lastOrderContext";
 
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    <LastOrderProvider>
+
+    
     <TableProvider>
     <CategoryProvider>
     <DepartmentProvider>
@@ -27,6 +31,7 @@ root.render(
     </DepartmentProvider>
     </CategoryProvider>
     </TableProvider>
+    </LastOrderProvider>
   </React.StrictMode>
 );
 

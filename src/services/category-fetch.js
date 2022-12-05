@@ -1,6 +1,6 @@
 export const getCategory = async ()=>{
   try{
-    const response = await fetch('http://localhost:6060/category')
+    const response = await fetch('http://localhost:5000/category')
     const category = response.json()
     return category
   }

@@ -1,11 +1,9 @@
-export const getOrderTable = async ()=>{
-  try{
-    const response = await fetch('http://localhost:6060/orders')
-    const category = response.json()
-    return category
-  }
-  catch(error){
+export const getOrderTable = async () => {
+  try {
+    return await fetch("http://localhost:5000/orders/")
+      .then((res) => res.json())
+      
+  } catch (error) {
     console.log(error);
-
   }
-}
+};

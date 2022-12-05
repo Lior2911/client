@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -9,9 +9,9 @@ import {
   Tooltip,
   Filler,
   Legend,
-} from 'chart.js';
-import { Line } from 'react-chartjs-2';
-import {faker} from '@faker-js/faker';
+} from "chart.js";
+import { Line } from "react-chartjs-2";
+import { faker } from "@faker-js/faker";
 
 ChartJS.register(
   CategoryScale,
@@ -28,32 +28,30 @@ export const options = {
   responsive: true,
   plugins: {
     legend: {
-      position: 'top' ,
+      position: "top",
     },
     title: {
       display: true,
-      text: 'Upcoming Orders',
+      text: "Upcoming Orders",
     },
   },
 };
 
-const labels = ['January', 'February', 'March', 'April', 'May', 'June'];
+const labels = ["January", "February", "March", "April", "May", "June"];
 
 export const data = {
   labels,
   datasets: [
     {
       fill: true,
-      label: 'Dataset 2',
-      data: [10,10,8,12,30,40,40],
-      borderColor: 'rgb(53, 162, 235)',
-      
-     
+      label: "Dataset 2",
+      data: [10, 10, 8, 12, 30, 40, 40],
+      borderColor: "rgb(53, 162, 235)",
     },
   ],
 };
 
- function Diagram() {
+function Diagram() {
   return <Line width={700} options={options} data={data} />;
 }
-export default Diagram
+export default Diagram;
