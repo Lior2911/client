@@ -21,16 +21,16 @@ const Dashbord = () => {
         </div>
       </div>
 
-      <div className="row mb-5 collectionRow ">
+      <div className="row mb-5 justify-content-center collectionRow ">
 
-        <div className="col-md-2 col-sm-2 colCollection">
+        <div className="col-md-2  colCollection">
           <span>Department</span>
           <div>
             <Department/>
           </div>
         </div>
 
-        <div className="col-md-2 col-sm-2 colCollection">
+        <div className="col-md-2  colCollection">
         <span>Category</span>
 
 
@@ -39,7 +39,7 @@ const Dashbord = () => {
           </div>
         </div>
 
-        <div className="col-md-2 col-sm-2 colCollection">
+        <div className="col-md-2  colCollection">
         <span>Information</span>
 
           <div>
@@ -47,7 +47,7 @@ const Dashbord = () => {
           </div>
         </div>
 
-        <div className="col-md-2 col-sm-2 colCollection">
+        <div className="col-md-2 colCollection">
         <span>Stores</span>
 
           <div>
@@ -55,7 +55,7 @@ const Dashbord = () => {
           </div>
         </div>
 
-        <div className="col-md-3 col-sm-2 colCollection">
+        <div className="col-md-3 colCollection">
         <span>Product</span>
           
           <div>

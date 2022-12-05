@@ -10,7 +10,7 @@ const Information = () => {
   return (
     <div className=" pb-1 text-center">
     <h1 className="text-primary">{informationLength}</h1>
-    <span>information</span>
+    <span>quantity</span>
   </div>
   );
 };

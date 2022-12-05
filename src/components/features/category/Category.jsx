@@ -10,7 +10,7 @@ const Category = () => {
   return (
     <div className=" pb-1 text-center">
       <h1 className="text-primary">{categoryLength}</h1>
-      <span>category</span>
+      <span>quantity</span>
     </div>
   );
 };
